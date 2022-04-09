@@ -1,43 +1,48 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'oneiron_blog_v2',
+    title: "oneiron_blog_v2",
     htmlAttrs: {
-      lang: 'en'
+      lang: "en",
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "" },
+      { name: "format-detection", content: "telephone=no" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href: "https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css",
+      },
+      // font-family: 'NanumSquareLight';
+      // font-family: 'NanumSquare';
+      // font-family: 'NanumSquareBold';
+      // font-family: 'NanumSquareExtraBold';
+      // font-family: 'NanumSquareAcb';
+      // font-family: 'NanumSquareAceb';
+      // font-family: 'NanumSquareAcl';
+      // font-family: 'NanumSquareAcr';
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    'ant-design-vue/dist/antd.css'
-  ],
+  css: ["ant-design-vue/dist/antd.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '@/plugins/antd-ui'
-  ],
+  plugins: ["@/plugins/antd-ui"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
-}
+  build: {},
+};

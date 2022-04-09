@@ -1,9 +1,19 @@
 <template>
-  <Tutorial/>
+  <div class="indexWrap">
+    index
+  </div>
 </template>
 
 <script>
+
 export default {
-  name: 'IndexPage'
+  layout: 'layout',
+  name: 'IndexPage',
 }
 </script>
+
+<style scoped>
+.bodyClass {
+  background-color: #E8EAEE;
+}
+</style>
