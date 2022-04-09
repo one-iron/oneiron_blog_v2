@@ -2,6 +2,7 @@
   <div class="mainWrap">
     <aside class="asideWrap">
       <Profile />
+      <SideMenu />
     </aside>
     <Nuxt />
   </div>
@@ -9,10 +10,11 @@
 
 <script>
 import Profile from "../components/profile.vue";
+import SideMenu from "../components/sideMenu.vue";
 
 export default {
   name: "Layout",
-  components: { Profile },
+  components: { Profile, SideMenu },
 };
 </script>
 
@@ -29,6 +31,8 @@ body {
   width: 1068px;
   margin: 0 auto;
   padding: 30px 0;
+
+  display: flex;
 }
 
 .asideWrap {

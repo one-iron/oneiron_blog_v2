@@ -456,3 +456,15 @@ button {
   overflow: visible;
   cursor: pointer;
 }
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+a.nuxt-link-exact-active {
+  text-decoration: none;
+  outline: none;
+}

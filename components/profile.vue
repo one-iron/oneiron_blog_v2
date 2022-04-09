@@ -25,7 +25,7 @@ export default {};
   height: 130px;
   padding: 20px;
 
-  font-family: "NanumSquare", sans-serif;
+  font-family: "NanumSquareExtraBold", sans-serif;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
@@ -61,11 +61,7 @@ export default {};
 }
 
 .profileText > button:hover {
-  font-size: 10px;
-  border-radius: 5px;
-  padding: 5px;
   background-color: var(--second-blue);
-  /* border: 1px solid var(--main-blue); */
   color: var(--main-blue);
 }
 
