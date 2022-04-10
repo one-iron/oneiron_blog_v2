@@ -30,12 +30,14 @@ body {
 .mainWrap {
   width: 1068px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 80px 0;
 
   display: flex;
 }
 
 .asideWrap {
   width: 258px;
+  display: flex;
+  flex-direction: column;
 }
 </style>

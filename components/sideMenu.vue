@@ -25,13 +25,17 @@ export default {
       path: "",
       list: [
         { emoji: "💻", text: " 개발", path: "/" },
+        { emoji: "⛅", text: " TIL", path: "/tils" },
         { emoji: "💡", text: " 궁금증", path: "/wonders" },
+        { emoji: "💰", text: " 에러", path: "/errors" },
+        { emoji: "🌈", text: " 일상", path: "/days" },
+        { emoji: "💾", text: " 회고록", path: "/memoirs" },
       ],
     };
   },
   watch: {
     $route(to, from) {
-      this.path = to.path;
+      this.path = to.name === "id" ? from.path : to.path;
     },
   },
 };
@@ -39,8 +43,10 @@ export default {
 
 <style>
 .sideMenuWrap {
-  margin-top: 30px;
+  top: 260px;
+  width: 230px;
   background-color: white;
+  position: fixed;
 
   border-radius: 15px;
   padding: 30px 20px;

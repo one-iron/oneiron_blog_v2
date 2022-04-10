@@ -20,6 +20,7 @@ export default {};
 
 <style>
 .profileWrap {
+  position: fixed;
   background-color: white;
   border-radius: 15px;
   height: 130px;
