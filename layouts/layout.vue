@@ -40,4 +40,26 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 1023px) {
+  .mainWrap {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+  }
+  .indexWrap {
+    width: 390px;
+    margin: 0 auto;
+  }
+  .profileWrap {
+    display: none;
+  }
+  .asideWrap {
+    display: inline-block;
+  }
+  .sideMenuWrap {
+    top: 0;
+  }
+}
 </style>

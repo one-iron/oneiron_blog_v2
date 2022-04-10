@@ -96,4 +96,15 @@ export default {
 .menuNuxtLink.nuxt-link-exact-active {
   outline: none;
 }
+
+@media screen and (max-width: 1023px) {
+  .sideMenuWrap {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  }
+  .sideMenuWrap li {
+    margin-right: 10px;
+    float: left;
+  }
+}
 </style>
