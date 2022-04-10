@@ -1,37 +1,57 @@
 <template>
-  <div class="tableWrap">
-    <table>
-      <thead>
-        <tr>
-          <td v-for="(item, index) in columns" :key="index">
-            <span>{{ item.title }}</span>
-          </td>
-        </tr>
-      </thead>
-      <tbody v-for="(item, index) in data" :key="index">
-        <tr>
-          <NuxtLink :to="item.id" class="menuNuxtLink">
-            <td>
-              {{ item.title }}
+  <div class="tableContainer">
+    <div class="tableWrap">
+      <table>
+        <thead>
+          <tr>
+            <td v-for="(item, index) in columns" :key="index">
+              <span>{{ item.title }}</span>
             </td>
-          </NuxtLink>
-          <td>
-            {{ item.created }}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          </tr>
+        </thead>
+        <tbody v-for="(item, index) in data" :key="index">
+          <tr>
+            <NuxtLink :to="`${type}_${item.id}`" class="menuNuxtLink">
+              <td>
+                {{ item.title }}
+              </td>
+            </NuxtLink>
+            <td>
+              {{ item.date }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "tableList",
-  props: ["data", "columns"],
+  props: ["data", "columns", "type"],
 };
 </script>
 
 <style>
+.tableContainer {
+  padding-bottom: 20px;
+  width: 777px;
+  margin-left: 30px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+@media screen and (max-width: 1023px) {
+  .tableContainer {
+    width: 100%;
+    margin: 150px 0 0 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  }
+}
+
 table {
   font-family: "NanumSquare", sans-serif;
   width: 100%;

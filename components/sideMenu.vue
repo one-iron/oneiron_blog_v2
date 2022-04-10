@@ -107,4 +107,9 @@ export default {
     float: left;
   }
 }
+
+ol,
+ul {
+  list-style: none;
+}
 </style>

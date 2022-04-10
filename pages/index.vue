@@ -1,7 +1,5 @@
 <template>
-  <div class="indexWrap">
-    <Table :data="data" :columns="columns" />
-  </div>
+  <div><Table :data="data" :columns="columns" :type="type" /></div>
 </template>
 
 <script>
@@ -12,17 +10,11 @@ export default {
   name: "IndexPage",
   components: { Table },
   mounted() {
-    const testData = [...Array(100)].map((_, i) => ({
-      id: `/${i}`,
-      title: `Edward King ${i}`,
-      created: "2022.04.10",
-      type: "/",
-    }));
-
-    this.data = testData;
+    this.searchAll();
   },
   data() {
     return {
+      type: "index",
       data: [],
       columns: [
         {
@@ -37,29 +29,16 @@ export default {
       ],
     };
   },
+  methods: {
+    async searchAll() {
+      const indexList = await this.$content("index")
+        .without(["body"])
+        .sortBy("date", "desc")
+        .fetch();
+      this.data = indexList;
+    },
+  },
 };
 </script>
 
-<style>
-.bodyClass {
-  background-color: var(--main-gray);
-}
-
-.indexWrap {
-  padding-bottom: 20px;
-  width: 777px;
-  margin-left: 30px;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-}
-
-@media screen and (max-width: 1023px) {
-  .indexWrap {
-    width: 100%;
-    margin: 150px 0 0 0;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  }
-}
-</style>
+<style></style>
