@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Table :data="data" :columns="columns" :type="type" />
+    <Table :data="data" :type="type" />
   </div>
 </template>
 

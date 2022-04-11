@@ -646,6 +646,10 @@
   margin-top: 0.25em;
 }
 
+.markdown-body li {
+  list-style: disc;
+}
+
 .markdown-body dl {
   padding: 0;
 }

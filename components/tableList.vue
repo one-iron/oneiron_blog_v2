@@ -32,7 +32,7 @@
 <script>
 export default {
   name: "tableList",
-  props: ["data", , "type"],
+  props: ["data", "type"],
   data() {
     return {
       columns: [

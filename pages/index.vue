@@ -1,5 +1,5 @@
 <template>
-  <div><Table :data="data" :columns="columns" :type="type" /></div>
+  <div><Table :data="data" :type="type" /></div>
 </template>
 
 <script>
