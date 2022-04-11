@@ -26,8 +26,8 @@ export default {
       list: [
         { emoji: "💻", text: " 개발", path: "/" },
         { emoji: "⛅", text: " TIL", path: "/tils" },
+        { emoji: "🏆", text: " 에러", path: "/errors" },
         { emoji: "💡", text: " 궁금증", path: "/wonders" },
-        { emoji: "💰", text: " 에러", path: "/errors" },
         { emoji: "🌈", text: " 일상", path: "/days" },
         { emoji: "💾", text: " 회고록", path: "/memoirs" },
       ],

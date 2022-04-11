@@ -1,9 +1,7 @@
-import theme from "@nuxt/content-theme-docs";
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "oneiron_blog_v2",
+    title: "원철",
     htmlAttrs: {
       lang: "en",
     },
@@ -14,7 +12,7 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/x-icon", href: "/oneiron.png" },
       {
         rel: "stylesheet",
         href: "https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css",
@@ -40,7 +38,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxtjs/snipcart"],
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxt/content"],

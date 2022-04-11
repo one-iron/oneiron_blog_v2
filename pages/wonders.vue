@@ -17,17 +17,6 @@ export default {
     return {
       type: "wonders",
       data: [],
-      columns: [
-        {
-          title: "제목",
-          dataIndex: "title",
-        },
-        {
-          title: "작성일",
-          dataIndex: "created",
-          width: 120,
-        },
-      ],
     };
   },
   methods: {

@@ -18,7 +18,6 @@ export default {
   layout: "layout",
   name: "detailPage",
   async asyncData({ $content, params, error }) {
-    console.log(params.id);
     const path = params.id.split("_");
     const page = await $content(`${path[0]}/${path[1]}`)
       .fetch()
@@ -69,5 +68,13 @@ article {
 
   font-size: 15px;
   padding: 20px 40px;
+}
+
+@media screen and (max-width: 1023px) {
+  .idWrap {
+    width: 100%;
+    margin: 150px 0 0 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  }
 }
 </style>

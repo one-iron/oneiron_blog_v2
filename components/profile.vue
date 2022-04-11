@@ -1,14 +1,14 @@
 <template>
   <div class="profileWrap">
     <div class="profileImgWrap">
-      <img
-        class="profileImg"
-        src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
+      <img class="profileImg" src="../static/oneiron.png" />
       <div class="profileText">
         <div>원철</div>
         <div>프론트엔드 개발자</div>
-        <button>알아보기</button>
+
+        <button>
+          <NuxtLink to="/aboutme_1" class="menuNuxtLink">알아보기</NuxtLink>
+        </button>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@ export default {};
 }
 
 .profileImg {
-  width: 100px;
+  height: 88px;
   border-radius: 15px;
 }
 </style>

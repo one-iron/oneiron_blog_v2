@@ -11,6 +11,9 @@
         </thead>
         <tbody v-for="(item, index) in data" :key="index">
           <tr>
+            <td>
+              {{ item.id }}
+            </td>
             <NuxtLink :to="`${type}_${item.id}`" class="menuNuxtLink">
               <td>
                 {{ item.title }}
@@ -29,7 +32,26 @@
 <script>
 export default {
   name: "tableList",
-  props: ["data", "columns", "type"],
+  props: ["data", , "type"],
+  data() {
+    return {
+      columns: [
+        {
+          title: "번호",
+          dataIndex: "id",
+        },
+        {
+          title: "제목",
+          dataIndex: "title",
+        },
+        {
+          title: "작성일",
+          dataIndex: "created",
+          width: 120,
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -72,7 +94,9 @@ table thead td {
 
 table thead tr td:first-child {
   border-top-left-radius: 15px;
-  width: 85%;
+}
+table thead tr td:nth-child(2) {
+  width: 65%;
 }
 
 table thead tr td:last-child {
@@ -90,7 +114,7 @@ table tbody tr {
 
 table tbody td {
   color: #636363;
-  width: 60%;
+  /* width: 60%; */
 }
 
 table tbody a:first-child {

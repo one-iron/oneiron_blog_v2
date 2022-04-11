@@ -22,6 +22,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
 @import "../static/common.css";
 @import "../static/reset.css";
+@import "../static/markdownGithuTheme.css";
 
 body {
   background-color: var(--main-gray);
