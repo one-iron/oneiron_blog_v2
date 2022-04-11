@@ -36,7 +36,11 @@ export default {
   },
   watch: {
     $route(to, from) {
-      this.path = to.name === "id" ? from.path : to.path;
+      if (to.path === '/aboutme_1') {
+        this.path = to.path;
+      } else {
+        this.path = to.name === "id" ? from.path : to.path;
+      }
     },
   },
 };
