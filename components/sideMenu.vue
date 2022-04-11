@@ -103,6 +103,7 @@ export default {
     top: 0;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    font-size: 17px;
   }
   .sideMenuWrap li {
     margin-right: 10px;
