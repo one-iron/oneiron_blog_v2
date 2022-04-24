@@ -55,4 +55,8 @@ export default {
     // Disable for security reason on CodeSandBox
     liveEdit: false,
   },
+
+  server: {
+    host: "0.0.0.0"
+  },
 };

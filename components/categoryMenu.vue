@@ -66,6 +66,12 @@ export default {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1023px) {
+    .categoryMenuWrap > ul > li {
+        margin-bottom: 10px;
+    }
+}
+
 .menuListIn {
     font-family: "NanumSquareExtraBold", sans-serif !important;
     background-color: var(--second-blue) !important;

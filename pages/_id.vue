@@ -74,7 +74,6 @@ article {
 @media screen and (max-width: 1023px) {
   .idWrap {
     width: 100%;
-    margin: 150px 0 0 0;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   }
 }
