@@ -18,6 +18,10 @@ export default {
         rel: "stylesheet",
         href: "https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css",
       },
+      {rel:"preconnect", href:"https://fonts.googleapis.com"},
+      {rel:"preconnect", href:"https://fonts.gstatic.com"},
+      {rel:"stylesheet", href:"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,900&display=swap"},
+
       // font-family: 'NanumSquareLight';
       // font-family: 'NanumSquare';
       // font-family: 'NanumSquareBold';
