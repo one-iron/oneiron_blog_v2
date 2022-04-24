@@ -51,9 +51,7 @@ export default {
 <style>
 
 .categoryMenuWrap {
-    /* border: 1px solid red; */
-    /* height: 40px; */
-    width: 100%;
+    /* width: 100%; */
 }
 
 .categoryMenuWrap > ul > li {

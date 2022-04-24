@@ -17,12 +17,19 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,900&display=swap');
+
 
 .profileV2Wrap {
     width: 650px;
     margin: 0 auto;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+    .profileV2Wrap {
+        width: 100%;
+        padding-bottom: 20px;
+    }
 }
 
 .blogName {
