@@ -56,10 +56,12 @@ export default {
 </script>
 
 <style>
+
 .tableContainer {
   padding-bottom: 20px;
-  width: 777px;
-  margin-left: 30px;
+  width: 650px;
+  margin: 0 auto;
+  /* margin-left: 30px; */
   border-radius: 10px;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
@@ -69,7 +71,7 @@ export default {
 @media screen and (max-width: 1023px) {
   .tableContainer {
     width: 100%;
-    margin: 170px 0 0 0;
+    /* margin: 170px 0 0 0; */
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   }
 }
@@ -96,7 +98,7 @@ table thead tr td:first-child {
   border-top-left-radius: 10px;
 }
 table thead tr td:nth-child(2) {
-  width: 65%;
+  width: 55%;
 }
 
 table thead tr td:last-child {

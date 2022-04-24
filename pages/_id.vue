@@ -39,9 +39,10 @@ export default {
 
 <style>
 .idWrap {
-  width: 777px;
-  margin-left: 30px;
-  border-radius: 15px;
+  width: 650px;
+
+  margin:0 auto;
+  border-radius: 10px;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -55,8 +56,8 @@ export default {
   height: 57px;
   padding: 0 40px;
   /* background-color: var(--main-gray); */
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border-bottom: 1px solid rgb(233, 233, 233);
 }
 
