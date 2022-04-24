@@ -53,16 +53,20 @@ export default {
   display: flex;
   align-items: center;
   font-size: 10px;
-  height: 57px;
+  /* height: 57px; */
   padding: 0 40px;
-  /* background-color: var(--main-gray); */
+  background-color: var(--second-blue);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom: 1px solid rgb(233, 233, 233);
+  text-align: center;
 }
 
 .pageTitle > h1 {
   margin: unset;
+  font-family: "NanumSquareExtraBold";
+  margin: 20px 0;
+  font-size: 30px;
 }
 article {
   font-family: "NanumSquare", "sans-serif";
