@@ -21,7 +21,8 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,900&display=swap');
 @import "../static/common.css";
 @import "../static/reset.css";
 @import "../static/markdownGithuTheme.css";
