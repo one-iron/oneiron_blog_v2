@@ -48,16 +48,16 @@ export default {
 
 <style>
 .sideMenuWrap {
-  top: 260px;
+  /* top: 260px; */
   width: 230px;
   background-color: white;
   position: fixed;
 
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 30px 20px;
 
   font-family: "NanumSquareBold", sans-serif;
-  font-size: 19px;
+  font-size: 17px;
 
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;

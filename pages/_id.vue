@@ -54,7 +54,7 @@ export default {
   font-size: 10px;
   height: 57px;
   padding: 0 40px;
-  background-color: var(--main-gray);
+  /* background-color: var(--main-gray); */
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom: 1px solid rgb(233, 233, 233);

@@ -60,7 +60,7 @@ export default {
   padding-bottom: 20px;
   width: 777px;
   margin-left: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -77,7 +77,7 @@ export default {
 table {
   font-family: "NanumSquare", sans-serif;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 table thead {
@@ -85,7 +85,7 @@ table thead {
 }
 
 table thead td {
-  background-color: var(--main-gray);
+  /* background-color: var(--main-gray); */
   color: black;
   font-weight: bold;
   font-size: 13px;
@@ -93,14 +93,14 @@ table thead td {
 }
 
 table thead tr td:first-child {
-  border-top-left-radius: 15px;
+  border-top-left-radius: 10px;
 }
 table thead tr td:nth-child(2) {
   width: 65%;
 }
 
 table thead tr td:last-child {
-  border-top-right-radius: 15px;
+  border-top-right-radius: 10px;
 }
 
 table tbody {

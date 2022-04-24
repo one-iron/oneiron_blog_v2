@@ -1,7 +1,7 @@
 <template>
   <div class="mainWrap">
     <aside class="asideWrap">
-      <Profile />
+      <!-- <Profile /> -->
       <SideMenu />
     </aside>
     <Nuxt />
