@@ -2,25 +2,28 @@ export default {
   target: "static",
   ssr: true,
   generate: {
-    routes: function () {
-      const path = ['aboutme', 'days', 'errors', 'index', 'memoirs', 'tils', 'wonders'];
-      let detailList = [];
-  
-      const searchAll2 = async (category) => {
-        const postList = await this.$content(category)
-        .without(["body"])
-        .sortBy("date", "desc")
-        .fetch();
-        return detailList.push(`/${category}_${postList[0].id}`);
-      }
-  
-      for (let i = 0; i < path.length; i++) {
-        const postList = searchAll2(path[i]);
-      }
-
-      return detailList
-    }
+    fallback:true
   },
+  // generate: {
+  //   routes: function () {
+  //     const path = ['aboutme', 'days', 'errors', 'index', 'memoirs', 'tils', 'wonders'];
+  //     let detailList = [];
+  
+  //     const searchAll2 = async (category) => {
+  //       const postList = await this.$content(category)
+  //       .without(["body"])
+  //       .sortBy("date", "desc")
+  //       .fetch();
+  //       return detailList.push(`/${category}_${postList[0].id}`);
+  //     }
+  
+  //     for (let i = 0; i < path.length; i++) {
+  //       const postList = searchAll2(path[i]);
+  //     }
+
+  //     return detailList
+  //   }
+  // },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "원아이언",
