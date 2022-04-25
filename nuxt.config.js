@@ -1,5 +1,5 @@
 export default {
-  target: "server",
+  target: "static",
   ssr: true,
   generate: {
     routes: function () {
@@ -21,14 +21,6 @@ export default {
       return detailList
     }
   },
-
-  // async searchAll() {
-  //   const indexList = await this.$content("index")
-  //     .without(["body"])
-  //     .sortBy("date", "desc")
-  //     .fetch();
-  //   this.data = indexList;
-  // },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "원아이언",
