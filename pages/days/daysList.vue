@@ -5,10 +5,11 @@
 </template>
 
 <script>
-import Table from "../components/tableList.vue";
+// import Table from "../../components/tableList.vue";
+import Table from "../../components/tableList.vue";
 export default {
   layout: "layout",
-  name: "daysPage",
+  name: "daysList",
   components: { Table },
   mounted() {
     this.searchAll();
