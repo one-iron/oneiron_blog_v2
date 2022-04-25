@@ -10,20 +10,20 @@ import Table from "../components/tableList.vue"
 // import Table from "../../components/tableList.vue";
 export default {
   layout: "layout",
-  name: "days",
+  name: "experiment",
   components: { Table },
   mounted() {
     this.searchAll();
   },
   data() {
     return {
-      type: "days",
+      type: "experiment",
       data: [],
     };
   },
   methods: {
     async searchAll() {
-      const indexList = await this.$content("days")
+      const indexList = await this.$content("experiment")
         .without(["body"])
         .sortBy("date", "desc")
         .fetch();
