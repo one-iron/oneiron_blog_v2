@@ -29,7 +29,7 @@ export default {
             { emoji: "⛅", text: " TIL", path: "/tils" },
             { emoji: "🏆", text: " 에러", path: "/errors" },
             { emoji: "💡", text: " 궁금증", path: "/wonders" },
-            { emoji: "🌈", text: " 일상", path: "/days/daysList" },
+            { emoji: "🌈", text: " 일상", path: "/days" },
             { emoji: "💾", text: " 회고록", path: "/memoirs" },
             { emoji: "🏄‍♂️", text: " 원철", path: "/aboutme_1" },
         ],

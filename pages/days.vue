@@ -6,10 +6,11 @@
 
 <script>
 // import Table from "../../components/tableList.vue";
-import Table from "../../components/tableList.vue";
+import Table from "../components/tableList.vue"
+// import Table from "../../components/tableList.vue";
 export default {
   layout: "layout",
-  name: "daysList",
+  name: "days",
   components: { Table },
   mounted() {
     this.searchAll();

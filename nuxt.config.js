@@ -2,12 +2,40 @@ export default {
   target: "server",
   ssr: true,
   // ssr: false,
+  // generate: {
+  //   fallback: true
+  // },
   generate: {
-    fallback: true
+    routes: function () {
+      const path = ['aboutme', 'days', 'errors', 'index', 'memoirs', 'tils', 'wonders']
+      console.log('>>', path)
+
+      return ['/errors_1']
+
+      // for (let i = 0; i < path.length; i++) {
+      //   path[i]
+      // }
+
+
+      // return axios.get('https://oneiron.co.kr')
+      // .then((res) => {
+      //   return res.data.map((post) => {
+      //     return '/' + post.id
+      //   })
+      // })
+    }
+  },
+
+  async searchAll() {
+    const indexList = await this.$content("index")
+      .without(["body"])
+      .sortBy("date", "desc")
+      .fetch();
+    this.data = indexList;
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "원철",
+    title: "원아이언",
     htmlAttrs: {
       lang: "en",
     },
