@@ -5,20 +5,17 @@ export default {
     routes: function () {
       const path = ['aboutme', 'days', 'errors', 'index', 'memoirs', 'tils', 'wonders'];
       let detailList = [];
-
-      const searchAll = async (category) => {
+  
+      const searchAll2 = async (category) => {
         const postList = await this.$content(category)
         .without(["body"])
         .sortBy("date", "desc")
         .fetch();
-        return postList;
+        return detailList.push(`/${category}_${postList[0].id}`);
       }
-
+  
       for (let i = 0; i < path.length; i++) {
-        const postList = searchAll(path[i]);
-        postList.map((item) => {
-          detailList.push(`/${path[i]}_${item.id}`)
-        })
+        const postList = searchAll2(path[i]);
       }
 
       return detailList
