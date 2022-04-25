@@ -1,38 +1,37 @@
 export default {
   target: "server",
   ssr: true,
-  // ssr: false,
-  // generate: {
-  //   fallback: true
-  // },
   generate: {
     routes: function () {
-      const path = ['aboutme', 'days', 'errors', 'index', 'memoirs', 'tils', 'wonders']
-      console.log('>>', path)
+      const path = ['aboutme', 'days', 'errors', 'index', 'memoirs', 'tils', 'wonders'];
+      let detailList = [];
 
-      return ['/errors_1']
+      const searchAll = async (category) => {
+        const postList = await this.$content(category)
+        .without(["body"])
+        .sortBy("date", "desc")
+        .fetch();
+        return postList;
+      }
 
-      // for (let i = 0; i < path.length; i++) {
-      //   path[i]
-      // }
+      for (let i = 0; i < path.length; i++) {
+        const postList = searchAll(path[i]);
+        postList.map((item) => {
+          detailList.push(`/${path[i]}_${item.id}`)
+        })
+      }
 
-
-      // return axios.get('https://oneiron.co.kr')
-      // .then((res) => {
-      //   return res.data.map((post) => {
-      //     return '/' + post.id
-      //   })
-      // })
+      return detailList
     }
   },
 
-  async searchAll() {
-    const indexList = await this.$content("index")
-      .without(["body"])
-      .sortBy("date", "desc")
-      .fetch();
-    this.data = indexList;
-  },
+  // async searchAll() {
+  //   const indexList = await this.$content("index")
+  //     .without(["body"])
+  //     .sortBy("date", "desc")
+  //     .fetch();
+  //   this.data = indexList;
+  // },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "원아이언",

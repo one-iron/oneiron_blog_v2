@@ -25,6 +25,13 @@ export default {
         .sortBy("date", "desc")
         .fetch();
       this.data = indexList;
+
+      let test = [];
+
+      indexList.map((item) => {
+        test.push(`/index_${item.id}`)
+      })
+      console.log('>>', test)
     },
   },
 };
