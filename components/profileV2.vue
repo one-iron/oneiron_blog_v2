@@ -28,7 +28,7 @@ export default {
 @media screen and (max-width: 1023px) {
     .profileV2Wrap {
         width: 100%;
-        padding-bottom: 20px;
+        padding: 20px 40px;
     }
 }
 

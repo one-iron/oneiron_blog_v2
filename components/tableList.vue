@@ -11,7 +11,7 @@
         </thead>
         <tbody v-for="(item, index) in data" :key="index">
           <tr>
-            <td>
+            <td class="tableId">
               {{ item.id }}
             </td>
             <NuxtLink :to="`${type}_${item.id}`" class="menuNuxtLink">
@@ -64,16 +64,21 @@ export default {
   /* margin-left: 30px; */
   border-radius: 10px;
   background-color: white;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 @media screen and (max-width: 1023px) {
   .tableContainer {
     width: 100%;
-    /* margin: 170px 0 0 0; */
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   }
+
+  .tableWrap {
+    font-size: 10px;
+  }
+
 }
 
 table {
@@ -87,10 +92,8 @@ table thead {
 }
 
 table thead td {
-  /* background-color: var(--main-gray); */
   color: black;
   font-weight: bold;
-  font-size: 13px;
   padding: 20px 40px;
 }
 
@@ -106,7 +109,6 @@ table thead tr td:last-child {
 }
 
 table tbody {
-  font-size: 13px;
   cursor: pointer;
 }
 

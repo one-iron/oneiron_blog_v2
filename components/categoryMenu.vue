@@ -50,10 +50,6 @@ export default {
 
 <style>
 
-.categoryMenuWrap {
-    /* width: 100%; */
-}
-
 .categoryMenuWrap > ul > li {
     display: inline-block;
     padding: 10px 13px;
@@ -61,14 +57,14 @@ export default {
     border-radius: 15px;
     background-color: white;
     font-family: "NanumSquareBold", sans-serif;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
 }
 
 @media screen and (max-width: 1023px) {
     .categoryMenuWrap > ul > li {
         margin-bottom: 10px;
+        font-size: 10px;
     }
 }
 
