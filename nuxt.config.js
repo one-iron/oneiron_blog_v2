@@ -2,9 +2,9 @@ export default {
   target: "server",
   ssr: true,
   // ssr: false,
-  // generate: {
-  //   fallback: true
-  // },
+  generate: {
+    fallback: true
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "원철",
