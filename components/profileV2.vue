@@ -3,7 +3,7 @@
       <NuxtLink to="/">
         <h1 class="blogName">ONE_IRON</h1>
       </NuxtLink>
-      <CategoryMenu />
+      <!-- <CategoryMenu /> -->
   </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
 .profileV2Wrap {
     width: 650px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 @media screen and (max-width: 1023px) {

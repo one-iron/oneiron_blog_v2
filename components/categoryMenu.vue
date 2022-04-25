@@ -7,7 +7,6 @@
             :key="item.text"
         >
             <NuxtLink :to="item.path" class="menuNuxtLink">
-            <!-- <div class="menuNuxtLinkEmoji">{{ item.emoji }}</div> -->
             <span>#{{ item.text }}</span>
             </NuxtLink>
         </li>
@@ -50,6 +49,15 @@ export default {
 
 <style>
 
+.categoryMenuWrap {
+  background-color: var(--main-gray);
+  position: sticky;
+  top: 0px;
+  width: 650px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
 .categoryMenuWrap > ul > li {
     display: inline-block;
     padding: 10px 13px;
@@ -62,10 +70,19 @@ export default {
 }
 
 @media screen and (max-width: 1023px) {
-    .categoryMenuWrap > ul > li {
-        margin-bottom: 10px;
-        font-size: 10px;
-    }
+  .categoryMenuWrap {
+    background-color: var(--main-gray);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+  
+  .categoryMenuWrap > ul > li {
+      margin-bottom: 10px;
+      font-size: 10px;
+  }
 }
 
 .menuListIn {

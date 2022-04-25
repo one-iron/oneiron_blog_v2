@@ -1,10 +1,7 @@
 <template>
   <div class="mainWrap">
-    <!-- <aside class="asideWrap">
-      <Profile />
-      <SideMenu />
-    </aside> -->
     <ProfileV2 />
+    <CategoryMenu />
     <Nuxt />
   </div>
 </template>
@@ -13,6 +10,7 @@
 // import Profile from "../components/profile.vue";
 // import SideMenu from "../components/sideMenu.vue";
 import ProfileV2 from "../components/profileV2.vue";
+import CategoryMenu from "../components/categoryMenu.vue";
 
 export default {
   name: "Layout",
@@ -32,11 +30,7 @@ body {
 }
 
 .mainWrap {
-  /* width: 1068px; */
-  /* margin: 0 auto; */
   padding: 80px 0;
-
-  /* display: flex; */
 }
 
 .asideWrap {
