@@ -28,7 +28,7 @@ export default {
             { emoji: "⛅", text: " TIL", path: "/tils" },
             { emoji: "🏆", text: " 에러", path: "/errors" },
             { emoji: "🌈", text: " 실험", path: "/experiment" },
-            { emoji: "💡", text: " 궁금증", path: "/wonders" },
+            // { emoji: "💡", text: " 궁금증", path: "/wonders" },
             { emoji: "💾", text: " 회고록", path: "/memoirs" },
             { emoji: "🏄‍♂️", text: " 원철", path: "/aboutme_1" },
         ],
