@@ -80,7 +80,7 @@ export default {
     liveEdit: false,
   },
 
-  server: {
-    host: "0.0.0.0"
-  },
+  // server: {
+  //   host: "0.0.0.0"
+  // },
 };
